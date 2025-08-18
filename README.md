@@ -15,8 +15,7 @@ Devops Engineer: Facilitates cooperation between development and operations team
 
 Quality Assurance Engineer: Makes sure an application performs according to requirements. Spots functional and non-functional defects
 
-                                                            Technology Stack.
-
+                                                  Technology Stack.
 
 Django: A high-level Python web framework used for building the RESTful API.
 Django REST Framework: Provides tools for creating and managing RESTful APIs.
@@ -26,3 +25,71 @@ Celery: For handling asynchronous tasks such as sending notifications or process
 Redis: Used for caching and session management.
 Docker: Containerization tool for consistent development and deployment environments.
 CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+
+                                                  DataBase Design
+
+Entities: Users, Properties, Bookings, Reviews and Payment
+
+Users:
+People who use the system — could be property owners (hosts) or customers (guests).
+Key Fields:
+user_id (Primary Key, unique ID)
+name (Full name)
+email (Unique for login)
+role (enum: "host" or "guest")
+Relationships:
+A User can own many Properties (if they are a host).
+A User can make many Bookings (if they are a guest).
+A User can write Reviews for Properties.
+
+Properties:
+These are listings (apartments, houses, hotels) that users can book.
+Key Fields:
+property_id (Primary Key)
+title (e.g., "2-Bedroom Apartment in Lagos")
+location (City, State, GPS coordinates)
+price_per_night (numeric)
+owner_id (Foreign Key → Users.user_id)
+Relationships:
+A Property belongs to one User (host).
+A Property can have many Bookings.
+A Property can have many Reviews.
+
+Bookings:
+Represents when a guest reserves a property for specific dates.
+Key Fields:
+booking_id (Primary Key)
+user_id (FK → Users.user_id, the guest making booking)
+property_id (FK → Properties.property_id)
+check_in_date
+check_out_date
+status (enum: "pending", "confirmed", "cancelled")
+Relationships:
+A Booking belongs to one User (guest).
+A Booking belongs to one Property.
+A Booking may generate a Payment.
+
+Reviews
+Feedback from guests about properties.
+Key Fields:
+review_id (Primary Key)
+user_id (FK → Users.user_id, the reviewer)
+property_id (FK → Properties.property_id)
+rating (1–5 stars)
+comment (text)
+Relationships:
+A Review belongs to one User.
+A Review belongs to one Property.
+A Property can have multiple Reviews.
+
+Payments
+Tracks money paid by guests for bookings.
+Key Fields:
+payment_id (Primary Key)
+booking_id (FK → Bookings.booking_id)
+amount (total price)
+payment_date
+status (enum: "paid", "failed", "refunded")
+Relationships:
+A Payment belongs to one Booking.
+A Booking can have one Payment.
