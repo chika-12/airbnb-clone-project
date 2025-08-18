@@ -27,21 +27,21 @@ Makes sure an application performs according to requirements. Spots functional a
 
 ## Technology Stack.
 
-#### Django: A high-level Python web framework used for building the RESTful API.
+**_Django_**: - A high-level Python web framework used for building the RESTful API.
 
-#### Django REST Framework: Provides tools for creating and managing RESTful APIs.
+**_Django REST Framework_**: - Provides tools for creating and managing RESTful APIs.
 
-#### PostgreSQL: A powerful relational database used for data storage.
+**_PostgreSQL_**: - A powerful relational database used for data storage.
 
-#### GraphQL: Allows for flexible and efficient querying of data.
+**_GraphQL_**: - Allows for flexible and efficient querying of data.
 
-#### Celery: For handling asynchronous tasks such as sending notifications or processing payments.
+**_Celery_**: - For handling asynchronous tasks such as sending notifications or processing payments.
 
-#### Redis: Used for caching and session management.
+**_Redis_**: - Used for caching and session management.
 
-#### Docker: Containerization tool for consistent development and deployment environments.
+**_Docker_**: -Containerization tool for consistent development and deployment environments.
 
-#### CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+**_CI/CD Pipelines_**: -Automated pipelines for testing and deploying code changes.
 
 ## Database Design
 
