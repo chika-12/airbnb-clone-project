@@ -52,17 +52,17 @@ People who use the system — could be property owners (hosts) or customers (gue
 Key Fields:
 
 <details>
-  1. First item user_id (Primary Key, unique ID)
-  2. Second item name (Full name)
-  3. Third item email (Unique for login)
-  4. Fourth item role (enum: "host" or "guest")
+  1. user_id (Primary Key, unique ID)
+  2. name (Full name)
+  3. email (Unique for login)
+  4. role (enum: "host" or "guest")
 </details>
 
 #### Relationships:
 
-- Item A User can own many Properties (if they are a host).
-- Item A User can make many Bookings (if they are a guest).
-- Item A User can write Reviews for Properties.
+- A User can own many Properties (if they are a host).
+- A User can make many Bookings (if they are a guest).
+- A User can write Reviews for Properties.
 
 Properties:
 These are listings (apartments, houses, hotels) that users can book.
