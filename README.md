@@ -159,18 +159,18 @@ For securing an application certain measures are taken
 - Athentication
   Before the user is logged in the server checks if the user email address and password in the database is same as the email address and password that the user entered and the an acceess and refresh token is then asigned which would be used for request assess.
 
--Authorization
-This restricts the access of the user. user can only access certain routes.
+- Authorization
+  This restricts the access of the user. user can only access certain routes.
 
 - Rate Limiter
   This limits the amount of request a user can make over a given time.
 
--Data protection
-This include encryption of sensitive data and input validation and sanitization
-and avoid sensitive data exposure.
+- Data protection
+  This include encryption of sensitive data and input validation and sanitization
+  and avoid sensitive data exposure.
 
--CORS (Cross-Origin Resource Sharing)
-Restrict origins that can access your API.
+- CORS (Cross-Origin Resource Sharing)
+  Restrict origins that can access your API.
 
 - Framework & Middleware Security
 - Helmet (Express.js)
@@ -179,3 +179,5 @@ Restrict origins that can access your API.
 - Use CSRF tokens for forms.
 - Error handling
 - Don’t leak stack traces in production (attackers can use them).
+
+## CI/CD Pipeline
