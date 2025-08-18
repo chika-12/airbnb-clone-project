@@ -51,12 +51,10 @@ Makes sure an application performs according to requirements. Spots functional a
 People who use the system — could be property owners (hosts) or customers (guests).
 Key Fields:
 
-<details>
-  1. user_id (Primary Key, unique ID)
-  2. name (Full name)
-  3. email (Unique for login)
-  4. role (enum: "host" or "guest")
-</details>
+- user_id (Primary Key, unique ID)
+- name (Full name)
+- email (Unique for login)
+- role (enum: "host" or "guest")
 
 #### Relationships:
 
