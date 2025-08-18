@@ -51,17 +51,18 @@ Makes sure an application performs according to requirements. Spots functional a
 People who use the system — could be property owners (hosts) or customers (guests).
 Key Fields:
 
-<details>user_id (Primary Key, unique ID)
-   name (Full name)
-   email (Unique for login)
-   role (enum: "host" or "guest")
+<details>
+  1. First item user_id (Primary Key, unique ID)
+  2. Second item name (Full name)
+  3. Third item email (Unique for login)
+  4. Fourth item role (enum: "host" or "guest")
 </details>
 
 #### Relationships:
 
-- Item 1 A User can own many Properties (if they are a host).
-  A User can make many Bookings (if they are a guest).
-  A User can write Reviews for Properties.
+- Item A User can own many Properties (if they are a host).
+- Item A User can make many Bookings (if they are a guest).
+- Item A User can write Reviews for Properties.
 
 Properties:
 These are listings (apartments, houses, hotels) that users can book.
