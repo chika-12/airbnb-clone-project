@@ -49,7 +49,8 @@ Makes sure an application performs according to requirements. Spots functional a
 
 **Users**:
 People who use the system — could be property owners (hosts) or customers (guests).
-Key Fields:
+
+1. Key Fields:
 
 - user_id (Primary Key, unique ID)
 - name (Full name)
