@@ -181,3 +181,10 @@ For securing an application certain measures are taken
 - Don’t leak stack traces in production (attackers can use them).
 
 ## CI/CD Pipeline
+
+Tools that could be used for CI/CD Pipeline
+
+- Github Actions
+- Docker
+- Jenkins
+- Circle CLI
