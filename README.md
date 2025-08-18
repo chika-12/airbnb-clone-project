@@ -124,6 +124,34 @@ Tracks money paid by guests for bookings.
 
 ## Feature Breakdown
 
+1. User Management
+
+- Manages user registration and access and authorization.
+
+2. Property Management
+
+- Manages the properties, it provides handlers for property listing, deletion, update etc
+
+3. Booking System
+
+- This sytem will be responsible for booking giving the users routes to book hotel
+
+4. Payment System
+
+- For making making payment and also retriving payment and accessing payment history
+
+5. Review and Ratings
+
+- For customer review of service provided and service ratings
+
+6. Database Optimization
+
+- Saving all data.
+
+7. User Authentication
+
+- This feature helps in protecting the app, it ensures that app is only registered users have access and restrict users access.
+
 ```
 
 ```
