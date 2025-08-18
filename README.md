@@ -45,9 +45,9 @@ Makes sure an application performs according to requirements. Spots functional a
 
 ## Database Design
 
-** Entities **: Users, Properties, Bookings, Reviews and Payment
+**Entities**: Users, Properties, Bookings, Reviews and Payment
 
-** Users **:
+**Users**:
 People who use the system — could be property owners (hosts) or customers (guests).
 Key Fields:
 user_id (Primary Key, unique ID)
