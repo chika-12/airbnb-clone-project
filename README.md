@@ -194,3 +194,14 @@ Tools that could be used for CI/CD Pipeline
 - Maintain visual consistency
 - Ensure fast loading times
 - Prioritize mobile responsiveness
+
+## Project Roles and Responsibilities
+
+1. Project Manager: Incharge of the entire project
+2. Frontend Developers: Builds the user interface
+3. Backend Developers: Responsible for server side logic
+4. Designers: Designs the user interface
+5. QA/Testers: Test the software to find bugs 
+6. DevOps Engineers: Deployment of the server
+7. Product Owner: Owner of the app.
+8. Scrum Master: 
