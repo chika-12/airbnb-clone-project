@@ -188,3 +188,9 @@ Tools that could be used for CI/CD Pipeline
 - Docker
 - Jenkins
 - Circle CLI
+
+## UI/UX Design Planning.
+- Create intuitive booking flow
+- Maintain visual consistency
+- Ensure fast loading times
+- Prioritize mobile responsiveness
