@@ -204,4 +204,6 @@ Tools that could be used for CI/CD Pipeline
 5. QA/Testers: Test the software to find bugs 
 6. DevOps Engineers: Deployment of the server
 7. Product Owner: Owner of the app.
-8. Scrum Master: 
+8. Scrum Master:
+
+## UI Component Patterns 
